@@ -7,6 +7,26 @@
 
 }
 
+a {
+
+    color: red !important;
+
+}
+
+a:hover {
+
+    color: rgb(119, 4, 4) !important;
+    transition: color 0.3s ease-in-out;
+
+}
+
+p {
+
+    line-break: auto;
+    margin: auto;
+
+}
+
 html,
 body {
     height: 100%;
@@ -21,11 +41,15 @@ body {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.07rem;
     flex-wrap: wrap;
 }
+
+[data-theme="dark"] {
+    background-color: rgb(20, 20, 20) !important;
+    color: #eee;
+  }
 
 #Schloss {
 
@@ -48,13 +72,12 @@ body {
 
 #AccountPage {
 
-    display: none;
+    visibility: hidden;
 
 }
 
 .navbar {
 
-    background-color: #f5f5f5;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.23);
     width: 95%;
     margin: auto;
