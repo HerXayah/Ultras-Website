@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+* {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.07rem;
+    flex-wrap: wrap;
+}
+
+#Schloss {
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+#Schloss:hover {
+
+    transform: scale(1.1);
+
+
+}
+
+.container {
+
+    vertical-align: middle;
+
+}
+
+#AccountPage {
+
+    display: none;
+
+}
+
+.navbar {
+
+    background-color: #f5f5f5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.23);
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+
+}
