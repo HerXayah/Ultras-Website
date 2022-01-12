@@ -48,7 +48,7 @@ body {
 
 [data-theme="dark"] {
     background-color: rgb(20, 20, 20) !important;
-    color: #eee;
+    color: #eee !important;
 }
 
 #Schloss {
@@ -84,5 +84,20 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
+
+}
+
+tr {
+
+    border-bottom: 1px solid rgb(20, 20, 20);
+
+
+}
+
+th {
+
+    border-bottom: 1px solid rgb(20, 20, 20);
+    padding: 0.5rem;
+
 
 }
