@@ -185,13 +185,13 @@ iframe {
 
     color: red;
     position: absolute;
-    transform: translateY(-120%);
+    transform: translateY(-700%);
     transition: transform 0.3s ease-in;
     
 }
 
 .skip-nav-link:focus {
 
-    transform: translateY(0);
+    transform: translateY(-360%);
     
 }
