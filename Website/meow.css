@@ -3,7 +3,6 @@
 * {
 
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
 
 }
 
@@ -46,7 +45,7 @@ body {
 }
 
 [data-theme="dark"] {
-    background-color: rgb(20, 20, 20) !important;
+    background-color: rgb(2, 2, 2) !important;
     color: #eee !important;
 }
 
@@ -60,6 +59,80 @@ body {
 
     transform: scale(1.1);
 
+}
+
+[data-theme="dark"] .navbar {
+
+    background-color: rgb(0, 0, 0) !important;
+    color: #eee !important;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.23);
+
+}
+
+[data-theme="dark"] #PlayerBox {
+
+    background-color: rgb(0, 0, 0) !important;
+    color: #eee !important;
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 255, 255, 0.23);
+
+}
+
+[data-theme="dark"] #PlayerImg {
+
+    border-bottom: 2px white solid;
+    background-color: rgb(0, 0, 0) !important;
+
+}
+
+#PlayerBox {
+
+    font-size: 1.3rem !important;
+    border-radius: 2rem;
+    width: 18.9rem;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.23);
+
+}
+
+#PlayerBox:hover {
+
+    transform: scale(1.05);
+
+}
+
+#PlayerImg {
+
+    border-radius: 1.6rem 1.6rem 0 0;
+    border-bottom: 2px black solid;
+    max-width: 314px;
+    max-height: 237.5px;
+}
+
+.card-body {
+
+    padding: 0 !important;
+
+}
+
+hr {
+
+    margin: 0px 0.1rem 0.1rem 0px;
+
+}
+
+.card-body p {
+
+    margin: 0.1rem 0.3rem 0.3rem 0.1rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+
+
+}
+
+.card-body h1 {
+
+    margin: 0;
+    font-size: 1.7rem;
 
 }
 

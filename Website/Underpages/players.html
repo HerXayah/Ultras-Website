@@ -29,7 +29,7 @@
 </head>
 
 <body class="text-center">
-    <nav class="navbar navbar-expand-lg navbar-light fs-4 p-3">
+    <nav class="navbar navbar-expand-lg navbar-light fs-4 p-3" id="navigationsdings">
         <a class="navbar-brand" href="#">
             <img src="../Img/loho.png" width="110rem" height="110rem" id="Schloss">
         </a>
@@ -42,7 +42,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Underpages/accounts.html">Alle Gruppen</a>
+                    <a class="nav-link" href="accounts.html">Alle Gruppen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="players.html">Die Spieler</a>
@@ -54,18 +54,106 @@
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
         </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div id="AccountPage">
-            <div class="container">
-                <h1>Alle Gruppen</h1>
-                <p>Hier sind alle Gruppen die wir haben!</p>
-                <p>Die werden aktiv geupdated</p>
-                <iframe
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSpXvA-zuMGYmeYmYtcYKVGPfni2v9UT9YMK2B7KNwlZYSu7FEVCBFndNo7AW4SoctfbbZPOltIZAZn/pubhtml?widget=true&amp;headers=false">
-                </iframe>
+            <div class="special">
+                <div class="d-flex flex-row gap-3 flex-wrap justify-content-center">
+
+                    <div id="PlayerBox" class="card">
+                        <img src="../Img/Spieler/Prime.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Prime - Support</h1>
+                            <p>Mit seinen freshen Support Plays wird er der enemy Botlane einheizen.</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>0/5/3</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>Leona - 1 Time</p>
+                        </div>
+                    </div>
+
+                    <div id="PlayerBox" class="card">
+                        <img src="../Img/Spieler/Pride_FNC_2020.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Pride - Toplaner</h1>
+                            <p>Der coole Toplaner vong 1 Beruf</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>1/4/1</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>Ornn - 1 Time</p>
+                        </div>
+                    </div>
+
+                    <div id="PlayerBox" class="card bg-light">
+                        <img src="../Img/Spieler/ESG_Pandar_2021_Split_2.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Pandar - Substitute Support</h1>
+                            <p>Von ESG halt der eine da</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>NaN</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>NaN</p>
+                        </div>
+                    </div>
+
+                    <div id="PlayerBox" class="card">
+                        <img src="../Img/Spieler/S04E_Kynetic_2021_Split_2.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Kynetic - ADC</h1>
+                            <p>Der SpandauBube halt</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>2/0/2</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>Jhin - 1 Time</p>
+                        </div>
+                    </div>
+
+                    <div id="PlayerBox" class="card bg-light">
+                        <img src="../Img/Spieler/S2V_Special_2021_Split_1.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Special - Midlane</h1>
+                            <p>Einfach sehr Speziell</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>1/4/3</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>LeBlanc - 1 Time</p>
+                        </div>
+                    </div>
+                    
+                    <div id="PlayerBox" class="card bg-light">
+                        <img src="../Img/Spieler/S04E_Obsess_2021_Split_2.png"
+                            id="PlayerImg" class="card-img-top">
+                        <div class="card-body">
+                            <h1>Obsses - Jungle</h1>
+                            <p>Der war doch von SO4 oder? :o</p>
+                            <hr>
+                            <h3>KDA</h3>
+                            <p>2/5/1</p>
+                            <hr>
+                            <h3>Most Played</h3>
+                            <p>Viego - 1 Time</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <div id="spacer" style="width: 100%; height: 2%;"></div>
     <script src="../dark-mode-switch.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
