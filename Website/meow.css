@@ -39,8 +39,6 @@ body {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.07rem;
     flex-wrap: wrap;
@@ -64,15 +62,9 @@ body {
 
 }
 
-.container {
-
-    vertical-align: middle;
-
-}
-
 #AccountPage {
 
-    visibility: hidden;
+    display: none;
 
 }
 
@@ -98,6 +90,27 @@ th {
 
     border-bottom: 1px solid rgb(20, 20, 20);
     padding: 0.5rem;
+
+
+}
+
+.special {
+
+    width: 100%;
+    min-height: 722.88px;
+
+}
+
+.name {
+
+    display: none !important;
+
+}
+
+iframe {
+
+    width: 100%;
+    height: 30rem;
 
 
 }
