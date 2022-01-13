@@ -42,6 +42,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.07rem;
     flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
 }
 
 [data-theme="dark"] {
@@ -59,12 +60,6 @@ body {
 
     transform: scale(1.1);
 
-
-}
-
-#AccountPage {
-
-    display: none;
 
 }
 
@@ -98,12 +93,6 @@ th {
 
     width: 100%;
     min-height: 722.88px;
-
-}
-
-.name {
-
-    display: none !important;
 
 }
 
