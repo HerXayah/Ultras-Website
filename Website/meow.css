@@ -14,7 +14,7 @@ a {
 
 html {
 
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
 }
 
@@ -47,7 +47,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.07rem;
     flex-wrap: wrap;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
     text-rendering: optimizeSpeed;
 }
 
@@ -58,7 +58,7 @@ body {
 
 #Schloss {
 
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -96,7 +96,7 @@ body {
     font-size: 1.3rem !important;
     border-radius: 2rem;
     width: 17rem;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.23);
 
 }
