@@ -2,4 +2,4 @@
 
 ## Aber nur manchmal
 
-![Released via](https://eintracht-ultras.space/)
+[Die Website ist hier btw](https://eintracht-ultras.space/)
