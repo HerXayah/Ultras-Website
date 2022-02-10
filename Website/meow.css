@@ -86,7 +86,6 @@ body {
 
 [data-theme="dark"] #PlayerImg {
 
-    border-bottom: 2px white solid;
     background-color: rgb(0, 0, 0) !important;
 
 }
@@ -110,9 +109,9 @@ body {
 #PlayerImg {
 
     border-radius: 1.6rem 1.6rem 0 0;
-    border-bottom: 2px black solid;
-    max-width: 314px;
-    max-height: 237.5px;
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
 }
 
 .card-body {
