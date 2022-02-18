@@ -134,7 +134,7 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                     champname.style.width = "100%";
                     champname.style.textAlign = "center";
 
-                }
+                
 
 
 
