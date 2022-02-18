@@ -127,7 +127,7 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                                     } 
                         champimg.src = details.gameMetadata.blueTeam.participantMetadata[i].champion.image;
                     }}
-                    }); */
+                    }); 
 
                     const champname = document.createElement('p');
                     champname.innerHTML = details.gameMetadata.participantMetadata[i].championId;
@@ -147,7 +147,7 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                     champframes2.setAttribute('class', 'champframes');
                     champframes2.style.width = "50%";
                     champframes2.style.float = "right";
-                    champframes2.style.textAlign = "center";
+                    champframes2.style.textAlign = "center"; */
 
 
 
