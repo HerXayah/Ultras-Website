@@ -110,7 +110,7 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                     const champframes1 = document.createElement('div');
                     champframes1.setAttribute('class', 'champframes');
                     
-                    for(i = 0; i < details.gameMetadata.participantMetadata.length; i++) {
+                    //for(i = 0; i < details.gameMetadata.participantMetadata.length; i++) {
                      /*    var request3 = new XMLHttpRequest();
 
                         // KMS this is shit send help
