@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lol-esports-api": "^0.9.0",
+    "lol-esports-api-module": "^0.9.1",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

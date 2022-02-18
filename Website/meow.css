@@ -199,3 +199,15 @@ iframe {
     transform: translateY(-360%);
     
 }
+
+.title {
+
+   font-size: 3rem;
+
+}
+
+.scoreboard {
+
+    font-size: 1.6rem;
+
+}
