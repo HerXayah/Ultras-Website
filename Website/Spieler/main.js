@@ -174,12 +174,12 @@ function getGameData() {
         }
         else {
 
-            const GameTitle = document.createElement('h1');
-            GameTitle.innerHTML = "No Games Today";
-            GameTitle.style.width = "100%";
-            GameTitle.style.textAlign = "center";
-            GameTitle.setAttribute('class', 'title');
-            container.appendChild(GameTitle);
+            const NoGameTitle = document.createElement('h1');
+            NoGameTitle.innerHTML = "No Games Today";
+            NoGameTitle.style.width = "100%";
+            NoGameTitle.style.textAlign = "center";
+            NoGameTitle.setAttribute('class', 'title');
+            container.appendChild(NoGameTitle);
         }
     }
     request.send();
