@@ -14,7 +14,7 @@ function getGameData() {
 
 
 
-request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=de-DE", true);
+    request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=de-DE", true);
     request.setRequestHeader("x-api-key", "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z")
     request.onreadystatechange = function () {
 
@@ -24,7 +24,7 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
             data = response.data.schedule.events;
 
             for(i = 0; i < data.length; i++) {  //for each event
-                if(data[i].league.name == "LEC") { //i
+                if(data[i].league.name == "Prime League") {
                 
                     var event = data[i];
 
@@ -57,8 +57,10 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
 
                     details = data2;
 
-                    console.log(details);
-                    console.log(event); 
+                    // Debug Shit
+
+            //        console.log(details);
+            //        console.log(event); 
      
                     const GameTitle = document.createElement('h1');
                     GameTitle.innerHTML = event.match.teams[0].name + " vs " + event.match.teams[1].name;
@@ -107,11 +109,13 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                     teamname2.style.width = "100%";
                     teamname2.style.textAlign = "center";
 
-                    const champframes1 = document.createElement('div');
+                    // If you can do that. Fuck DDragonAPI.
+
+                   /* const champframes1 = document.createElement('div');
                     champframes1.setAttribute('class', 'champframes');
                     
-                    //for(i = 0; i < details.gameMetadata.participantMetadata.length; i++) {
-                     /*    var request3 = new XMLHttpRequest();
+                    for(i = 0; i < details.gameMetadata.participantMetadata.length; i++) {
+                         var request3 = new XMLHttpRequest();
 
                         // KMS this is shit send help
                         request3.open('https://ddragon.leagueoflegends.com/cdn/' + details.gameMetadata.version + '/data/de_DE/champion.json', function (error, response, body) {
@@ -133,10 +137,6 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                     champname.innerHTML = details.gameMetadata.participantMetadata[i].championId;
                     champname.style.width = "100%";
                     champname.style.textAlign = "center";
-
-                
-
-
 
                     champframes1.style.width = "50%";
                     champframes1.style.float = "left";
@@ -171,6 +171,15 @@ request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=
                 });
                 }
             }
+        }
+        else {
+
+            const GameTitle = document.createElement('h1');
+            GameTitle.innerHTML = "No Games Today";
+            GameTitle.style.width = "100%";
+            GameTitle.style.textAlign = "center";
+            GameTitle.setAttribute('class', 'title');
+            container.appendChild(GameTitle);
         }
     }
     request.send();
