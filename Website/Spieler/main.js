@@ -20,7 +20,7 @@ function getGameData() {
     request.setRequestHeader("x-api-key", "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z")
     request.onreadystatechange = function () {
 
-        if (request.status === 200) {
+        if (request.status === 200 && request.readyState === 4) {
             var response = JSON.parse(request.responseText);
 
             data = response.data.schedule.events;
