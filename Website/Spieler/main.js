@@ -64,7 +64,7 @@ function getGameData() {
                    // console.log(details);
                    // console.log(event); 
 
-                   GameTitle.style.display = "none";
+                    NoGames.style.display = "none";
      
                     const GameTitle = document.createElement('h1');
                     GameTitle.innerHTML = event.match.teams[0].name + " vs " + event.match.teams[1].name;
