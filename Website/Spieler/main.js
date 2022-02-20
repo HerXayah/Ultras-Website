@@ -13,7 +13,7 @@ function getGameData() {
     const NoGames = document.createElement('h1');
     NoGames.style.width = "100%";
     NoGames.style.textAlign = "center";
-    NoGames.innerHTML = "No Games Today";
+    NoGames.innerHTML = "Keine Spiele grade";
     app.appendChild(NoGames);
 
     request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=de-DE", true);
