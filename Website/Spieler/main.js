@@ -10,15 +10,17 @@ function getGameData() {
     container.setAttribute('class', 'container')
     app.appendChild(container)
 
-
-
-
+    const NoGames = document.createElement('h1');
+    NoGames.style.width = "100%";
+    NoGames.style.textAlign = "center";
+    NoGames.innerHTML = "No Games Today";
+    app.appendChild(NoGames);
 
     request.open('GET', "https://esports-api.lolesports.com/persisted/gw/getLive?hl=de-DE", true);
     request.setRequestHeader("x-api-key", "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z")
     request.onreadystatechange = function () {
 
-        if (request.readyState == 4) {
+        if (request.status === 200) {
             var response = JSON.parse(request.responseText);
 
             data = response.data.schedule.events;
@@ -59,8 +61,10 @@ function getGameData() {
 
                     // Debug Shit
 
-            //        console.log(details);
-            //        console.log(event); 
+                   // console.log(details);
+                   // console.log(event); 
+
+                   GameTitle.style.display = "none";
      
                     const GameTitle = document.createElement('h1');
                     GameTitle.innerHTML = event.match.teams[0].name + " vs " + event.match.teams[1].name;
@@ -149,8 +153,6 @@ function getGameData() {
                     champframes2.style.float = "right";
                     champframes2.style.textAlign = "center"; */
 
-
-
                     Scoreboard.setAttribute('class', 'scoreboard');
                     team1box.setAttribute('class', 'teambox');
                     team2box.setAttribute('class', 'teambox');
@@ -171,15 +173,6 @@ function getGameData() {
                 });
                 }
             }
-        }
-        else {
-
-            const NoGameTitle = document.createElement('h1');
-            NoGameTitle.innerHTML = "No Games Today";
-            NoGameTitle.style.width = "100%";
-            NoGameTitle.style.textAlign = "center";
-            NoGameTitle.setAttribute('class', 'title');
-            container.appendChild(NoGameTitle);
         }
     }
     request.send();
