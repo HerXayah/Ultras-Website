@@ -165,10 +165,10 @@ function getGameData() {
                     team2box.appendChild(logoTeam2);
                     team1box.appendChild(teamname);
                     team2box.appendChild(teamname2);
-                    container.appendChild(champframes1);
-                    container.appendChild(champframes2);
-                    champframes1.appendChild(champname);
-                    champframes2.appendChild(champname);        
+                   // container.appendChild(champframes1);
+                   // container.appendChild(champframes2);
+                  //  champframes1.appendChild(champname);
+                  //  champframes2.appendChild(champname);        
 
                 });
                 }
